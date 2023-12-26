@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  iontra_th:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./results:/app/results
+    ports:
+      - "8080:8080"
